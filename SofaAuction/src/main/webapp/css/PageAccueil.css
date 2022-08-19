@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+body {
+  	margin-top: 80px;
+  	background-color:#D9DDDD;
+  	background: linear-gradient(90deg, rgba(237,237,228,1) 0%, rgba(207,205,195,1) 38%, rgba(237,237,228,1) 100%);
+  	height:100%;
+  	width: 100%;
+}
+
+@media (min-width: 992px) {
+  body, html {
+  	height: 100%;
+  	width: 100%;
+    background-image: url("../images/background2.jpg");
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+  }
+  
+  #corps{
+  	min-height:100%;
+	margin-left: 12%;
+	margin-right: 12%;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	background-color: #D9DDDD;
+	background: linear-gradient(90deg, rgba(237,237,228,1) 0%, rgba(207,205,195,1) 38%, rgba(237,237,228,1) 100%);
+	box-shadow: 2px 2px 3px #664A18;
+
+}
+}
+
+
+/*Page Accueil*/
+	/*Partie Filtre*/
+.filtre-contenant{
+	display: flex;
+	flex-direction: row;
+	max-width: 1000px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 10px 40px 10px 40px;
+}
+
+.filtre-element{
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 200px;
+	padding: 30px;
+}
+
+.filtre-element:nth-child(1) {
+	flex-direction:column;
+	min-width: 500px;
+	flex:1;
+}
+
+.filtre-element:nth-child(2) {
+	width: 200px;
+}
+
+
+.filtre-sous-element{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+
+.filtre-element:nth-child(2) .filtre-sous-element:nth-child(1){
+	align-self: center;
+}
+
+.filtre-sous-element:nth-child(1) .filtre-sous-sous-element:nth-child(2){
+	padding-bottom: 10px;
+}
+
+.filtre-sous-element:nth-child(2) .filtre-sous-sous-element:nth-child(2){
+	padding-bottom: 10px;
+}
+
+.filtre-sous-element:nth-child(3) .filtre-sous-sous-element:nth-child(1){
+	flex:1;
+	min-width: 230px;
+}
+
+.filtre-sous-element:nth-child(3) .filtre-sous-sous-element:nth-child(2){
+	flex:1;
+	min-width: 230px;
+}
+
+.filtre-sous-sous-element:nth-child(1){
+	width: 200px;
+}
+
+.filtre-sous-sous-element:nth-child(2){
+	flex: 1;
+	min-width: 400px;
+}
+
+/* Liste des enchères*/
+
+.liste-enchere{
+	margin-top: 20px;
+	margin-left:30px;
+	margin-right: 15px;
+
+}
+
+.alert{
+	width: 100%;
+}
+
+/*Détail Vente*/
+
+#conteneur{
+
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 2%;
+}
+
+.detail-img{
+	max-height: 100%;
+	object-fit: contain;
+
+}
+
+
+.detail:nth-child(1){
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	min-width: 250px;
+}
+
+.detail:nth-child(2){
+	display: flex;
+	max-width: 60%;
+	min-width: 310px;
+	flex-wrap: wrap;
+
+}
+
+.element{
+	display: flex;
+	flex-direction: row;
+	align-content: space-between;
+	flex-wrap: wrap;
+	width: 100%
+}
+
+.flex-1{
+	max-width: 20%;
+	min-width: 160px;
+}
+
+.flex-2{
+	flex: 1;
+	min-width: 170px;
+	max-width: 600px;
+	text-align: justify;
+  	text-justify: inter-word;
+}
+
+/* page accueil*/
+
+.card-image{
+	height: 200px
+}
+
+.card-img-top{
+	max-height: 100%;
+	object-fit: contain;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+	border-color:#8E6621;
+	background-color:#8E6621;
+}
+
+.card{
+	height: 400px;  /* à committer*/
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	box-shadow: 8px 5px 4px #331C0F;
+	padding-bottom: 8px;
+}
+
+/* à committer*/
+.card:hover{
+	transform: scale(1.08);
+}
+
+.btn{
+	background-color: #8E6621;
+	box-shadow: 2px 2px 2px #331C0F;
+}
+
+.btn:hover{
+	background-color: #552613;
+}
+
+.link:link{
+	color: black;
+}
+
+.link:hover{
+	color: #8E6621;
+}
+
+.link:visited{
+	color: #904020;
+}
+
+
+
+
+#logo{
+	height: 90px;
+	border-radius: 4px;
+	box-shadow: 6px 6px 6px #8E6621;
+}
+
+#page-top{
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+#EnchereButton{
+	margin-bottom: 1rem
+}
+
+
+
+#categorie{
+	height: 40px;
+}
+
+#mainNav{
+	background-color: #331C0F;
+	background: linear-gradient(90deg, rgba(79,35,18,1) 0%, rgba(67,30,15,1) 8%, rgba(67,30,15,1) 100%);
+	border-bottom: 2px #331C0F inset;
+
+}
+
+footer {
+	margin: 0;
+   bottom:0;
+   width:100%;
+   background-color: #331C0F;
+   background: linear-gradient(90deg, rgba(79,35,18,1) 0%, rgba(67,30,15,1) 8%, rgba(67,30,15,1) 100%);
+
+}
+
+

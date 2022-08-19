@@ -11,14 +11,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 
 import fr.eni.encheres.bll.ArticleManager;
 import fr.eni.encheres.bo.Article;
 
 /**
- * Servlet implementation class Api
+ * Servlet 
+ * Api
  */
 @WebServlet("/Api")
 public class Api extends HttpServlet {
